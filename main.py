@@ -6,10 +6,10 @@
     procesados = []
 
     for nombre in lista_nombres:
-        nombre = nombre.strip()
-        if nombre:
-            nombre = nombre.capitalize()
-            procesados.append(nombre)
+        nombre_limpiado = nombre.strip()
+        if nombre_limpiado:
+            nombre_limpiado = nombre_limpiado.capitalize()
+            procesados.append(nombre_limpiado)
         
     return procesados
 
