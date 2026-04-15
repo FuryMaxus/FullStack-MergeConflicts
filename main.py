@@ -6,11 +6,13 @@
     procesados = []
 
     for nombre in lista_nombres:
-        nombre_limpiado = nombre.strip()
-        if nombre_limpiado:
-            nombre_limpiado = nombre_limpiado.capitalize()
-            procesados.append(nombre_limpiado)
-        
+        # 1. Eliminar espacios en blanco al inicio y final
+        limpio = nombre.strip()
+
+        # 2. Poner la primera letra en mayúscula y el resto en minúscula
+        if limpio:  # 3. Solo agregar si no está vacío
+            procesados.append(limpio.capitalize())
+
     return procesados
 
 
